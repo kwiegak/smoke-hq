@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="filters">
+    <a routerLink="/catalog" [queryParams]="{filter: 'Glass'}" routerLinkActive="active" class="button">Glass</a>
+    <a routerLink="/catalog" [queryParams]="{filter: 'Vapes'}" routerLinkActive="active" class="button">Vapes</a>
+    <a routerLink="/catalog" [queryParams]="{filter: 'Flower'}" routerLinkActive="active" class="button">Flower</a>
+    <a routerLink="/catalog" [queryParams]="{filter: 'Edibles'}" routerLinkActive="active" class="button">Edibles</a>
+    <a routerLink="/catalog" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}" class="button">All</a>
+  </div>
+
+  <ul class="products">
+    <li class="product-item" *ngFor="let product of getFilteredProducts()">
+      <bot-product-details [product]="product" (buy)="addToCart(product)"></bot-product-details>
+    </li>
+  </ul>
+</div>

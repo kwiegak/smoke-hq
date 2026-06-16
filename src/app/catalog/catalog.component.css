@@ -1,0 +1,31 @@
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 200px;
+}
+
+.filters button {
+  width: 100px;
+}
+
+.products {
+  margin: 0 100px;
+  border-top: 2px solid #f5a623;
+}
+
+.product-item {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 15px;
+}

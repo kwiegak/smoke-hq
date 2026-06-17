@@ -21,58 +21,44 @@ body {
 }
 
 a {
-  color: #444;
+  color: var(--smoke-text);
   text-decoration: none;
 }
 
 a.active {
   padding-bottom: 5px;
-  border-bottom: 2px solid #f5a623;
+  border-bottom: 2px solid var(--smoke-orange);
 }
 
 a.button.active {
   padding-bottom: 5px;
-  border-bottom: 2px solid #f5a623;
+  border-bottom: 2px solid var(--smoke-orange);
 }
 
 a:visited {
-  color: #444;
+  color: var(--smoke-text);
 }
 
 a:hover {
   color: var(--smoke-orange);
 }
 
+/* CTA Links */
+
 a.cta {
-  color: #d25ca1;
+  color: var(--smoke-orange);
 }
 
 a.cta:visited {
-  color: #d25ca1;
+  color: var(--smoke-orange);
 }
 
 a.cta:hover {
-  color: #f27cb1;
+  color: var(--smoke-orange-dark);
 }
 
 .cta {
-  color: #d25ca1;
-}
-
-a.cta {
-  color: #d25ca1;
-}
-
-a.cta:visited {
-  color: #d25ca1;
-}
-
-a.cta:hover {
-  color: #f27cb1;
-}
-
-.cta {
-  color: #d25ca1;
+  color: var(--smoke-orange);
 }
 
 ul {
@@ -84,8 +70,8 @@ button {
   font-size: 15px;
   padding: 15px 25px;
   background-color: var(--smoke-orange);
-  color: #000;
-  font-weight: bold; 
+  color: var(--smoke-black);
+  font-weight: bold;
   border: 0;
   box-shadow: none;
   border-radius: 5px;
@@ -96,7 +82,7 @@ a.button {
   font-size: 15px;
   padding: 15px 25px;
   background-color: var(--smoke-orange);
-  color: #000;
+  color: var(--smoke-black);
   font-weight: bold;
   border: 0;
   box-shadow: none;
@@ -105,7 +91,8 @@ a.button {
 }
 
 a.button:hover {
-  color: #1c6d92;
+  color: var(--smoke-black);
+  background-color: var(--smoke-orange-dark);
 }
 
 button:disabled {
@@ -113,25 +100,32 @@ button:disabled {
 }
 
 button:hover {
-  color: #1c6d92;
+  color: var(--smoke-black);
+  background-color: var(--smoke-orange-dark);
 }
 
 button.cta {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #d25ca1;
-  color: #ddd;
+  background-color: var(--smoke-dark);
+  color: var(--smoke-orange);
+  border: 1px solid var(--smoke-orange);
 }
 
 button.cta:hover {
-  color: #fff;
+  background-color: var(--smoke-orange);
+  color: var(--smoke-black);
 }
 
 input {
   padding: 15px;
   font-size: 20px;
+  background-color: var(--smoke-dark);
+  color: var(--smoke-text);
+  border: 1px solid var(--smoke-border);
 }
 
 .button.cta:disabled {
-  background-color: #f590c4;
-  color: #aaa;
+  background-color: #555;
+  color: #999;
+  border-color: #555;
 }

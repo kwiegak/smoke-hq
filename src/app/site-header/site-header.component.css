@@ -1,19 +1,83 @@
 .container {
   display: flex;
   justify-content: space-between;
-  font-size: 24px;
-  margin-bottom: 10px;
+  align-items: center;
+
   margin: -3px -8px 0 -8px;
-  padding: 0 8px 5px 8px;
-  border-bottom: 2px solid #818285;
+  margin-bottom: 10px;
+
+  padding: 10px 20px;
+
   background: #111;
   border-bottom: 3px solid #f5a623;
 }
 
+/* ----------------------------------
+   Left Side
+----------------------------------- */
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+/* ----------------------------------
+   Brand
+----------------------------------- */
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.brand-link {
+  display: block;
+  cursor: pointer;
+  border-radius: 10px;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.brand-link:active {
+  transform: scale(0.98);
+}
+
+.logo {
+  height: 105px;
+  display: block;
+  cursor: pointer;
+
+  transition:
+    transform .2s ease,
+    filter .2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+  filter: brightness(1.15);
+}
+
+/* ----------------------------------
+   Navigation
+----------------------------------- */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
 .container a {
+  position: relative;
+
   color: #f5a623;
   text-decoration: none;
+
+  font-size: 22px;
   font-weight: 600;
+
   transition: color .2s ease;
 }
 
@@ -21,61 +85,99 @@
   color: #ffffff;
 }
 
-.left {
-  display: flex;
-  align-items: center;
+.container a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: #f5a623;
+
+  transition: width .2s ease;
 }
 
-.left * {
-  margin-right: 25px;
+.container a:hover::after,
+.container a.active::after {
+  width: 100%;
 }
 
-.logo {
-  height: 65px;
+.container a.active {
+  color: #ffffff;
 }
+
+/* ----------------------------------
+   Cart
+----------------------------------- */
 
 .cart {
-  display: flex;
   position: relative;
 }
 
 .cartCount {
   position: absolute;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
+  top: -8px;
+  right: -16px;
+
   width: 20px;
   height: 20px;
-  top: -7px;
-  right: -15px;
-  border-radius: 25px;
-  background-color: #f5a623;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #f5a623;
   color: #000;
+
+  font-size: 12px;
   font-weight: bold;
-  font-size: 14px;
 }
 
-.cartCount div {
-  margin: auto;
-}
+/* ----------------------------------
+   Right Side
+----------------------------------- */
 
 .right {
   display: flex;
   align-items: center;
-  margin-right: 25px;
+  gap: 25px;
+
+  margin-right: 20px;
 }
 
-.right * {
-  margin-left: 25px;
+.register-link {
+  color: #ffffff !important;
+  border: 1px solid #f5a623;
+  padding: 8px 16px;
+  border-radius: 6px;
 }
+
+.register-link:hover {
+  background: #f5a623;
+  color: #111 !important;
+}
+
+.register-link::after {
+  display: none;
+}
+
+/* ----------------------------------
+   Profile
+----------------------------------- */
 
 .right img {
-  height: 40px;
+  height: 42px;
   cursor: pointer;
 }
 
 .sign-out {
   position: absolute;
-  top: 60px;
+  top: 65px;
   right: 30px;
 }

@@ -120,57 +120,6 @@
   margin-top: 15px;
 }
 
-.white-paper {
-  display: flex;
-  height: 100%;
-  margin: 0 25px;
-}
-
-.white-paper img {
-  width: 75%;
-}
-
-.white-paper .text {
-  display: flex;
-  width: 25%;
-  flex-direction: column;
-  background-color: #333;
-  text-align: center;
-  justify-content: space-between;
-}
-
-.white-paper .header-text {
-  margin-top: 50px;
-  font-size: 30px;
-}
-
-.white-paper .sub-text {
-  font-size: 20px;
-  color: #5cadd2;
-  margin-top: 10px;
-  padding: 0 15%;
-}
-
-.white-paper .sub-text p {
-  margin: 0;
-}
-
-.white-paper .large-text {
-  border-top: 2px solid #666;
-  border-bottom: 2px solid #666;
-  margin-top: -50px;
-  padding: 20px 0;
-  font-size: 35px;
-  color: #fff;
-}
-
-.white-paper .learn-more {
-  background-color: #d25ca1;
-  color: white;
-  padding: 15px 25px;
-  text-decoration: none;
-}
-
 .category-header {
   text-align: center;
   margin: 50px 0 30px 0;
@@ -183,4 +132,141 @@
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/* ==================================
+   Shared Headers
+================================== */
+
+.featured-header,
+.why-header {
+  text-align: center;
+  margin: 70px 0 30px;
+}
+
+.featured-header h2,
+.why-header h2 {
+  color: #f5a623;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ==================================
+   Featured Products
+================================== */
+
+.featured-products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 100px;
+}
+
+.featured-product {
+  width: 250px;
+
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+
+  padding: 20px;
+  text-align: center;
+
+  transition: all .25s ease;
+}
+
+.featured-product:hover {
+  border-color: #f5a623;
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(245,166,35,.25);
+}
+
+.featured-product img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.featured-name {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.featured-price {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f5a623;
+}
+
+/* ==================================
+   Why Smoke HQ
+================================== */
+
+.why-smoke-hq {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  margin: 0 100px 50px;
+}
+
+.benefit {
+  width: 250px;
+
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.benefit-icon {
+  font-size: 36px;
+  color: #f5a623;
+  margin-bottom: 10px;
+}
+
+.benefit-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.benefit-text {
+  color: #bdbdbd;
+  line-height: 1.5;
+}
+
+/* ==================================
+   Location
+================================== */
+
+.location-section {
+  text-align: center;
+
+  margin: 50px 100px 75px;
+
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+
+  padding: 40px;
+}
+
+.location-section h2 {
+  color: #f5a623;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 42px;
+}
+
+.location-info p {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0;
 }

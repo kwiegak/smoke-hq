@@ -4,15 +4,40 @@
 }
 
 .hero {
-  background-image: url("/assets/images/hero-banner.png");
+  background-image: url("/assets/images/smoke-shop-indoors.png");
   background-repeat: no-repeat;
-  height: 300px;
+  height: 550px;
   background-size: cover;
   background-position: center center;
   text-align: center;
   margin-left: -8px;
   margin-right: -8px;
   position: relative;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.shop-btn {
+  background: #f5a623;
+  color: black;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .hero::before {
@@ -65,25 +90,40 @@
 .part {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
-  text-align: center;
-  cursor: pointer;
+  align-items: center;
+
+  background: #1b1b1b;
+
+  border: 1px solid #333;
+  border-radius: 12px;
+
+  padding: 20px;
+
+  width: 240px;
+
   transition: all .25s ease;
 }
 
 .part:hover {
   transform: translateY(-5px);
+
+  border-color: #f5a623;
+
+  box-shadow: 0 0 20px rgba(245, 166, 35, 0.3);
 }
 
 .part img {
   width: 180px;
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #1b1b1b;
-  border: 1px solid #333;
-  border-radius: 12px;
-}
+  height: 180px;
 
+  object-fit: contain;
+}
+.part-name {
+  color: #f5a623;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
 .white-paper {
   display: flex;
   height: 100%;
@@ -133,4 +173,18 @@
   color: white;
   padding: 15px 25px;
   text-decoration: none;
+}
+
+.category-header {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.category-header h2 {
+  color: #f5a623;
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

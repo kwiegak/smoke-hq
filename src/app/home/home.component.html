@@ -11,41 +11,22 @@
     <h2>Featured Products</h2>
   </div>
   <div class="featured-products">
-    <a
-      routerLink="/catalog"
-      [queryParams]="{ filter: 'Flower' }"
-      class="featured-product"
-    >
+    <a routerLink="/catalog" [queryParams]="{ filter: 'Flower' }" class="featured-product">
       <img src="/assets/images/products/flower-1.png" alt="THCA Flower" />
       <div class="featured-name">Premium THCA Flower</div>
       <div class="featured-price">$39.99</div>
     </a>
-
-    <a
-      routerLink="/catalog"
-      [queryParams]="{ filter: 'Vapes' }"
-      class="featured-product"
-    >
+    <a routerLink="/catalog" [queryParams]="{ filter: 'Vapes' }" class="featured-product">
       <img src="/assets/images/products/vape-1.png" alt="Disposable Vape" />
       <div class="featured-name">Disposable Vape</div>
       <div class="featured-price">$24.99</div>
     </a>
-
-    <a
-      routerLink="/catalog"
-      [queryParams]="{ filter: 'Glass' }"
-      class="featured-product"
-    >
+    <a routerLink="/catalog" [queryParams]="{ filter: 'Glass' }" class="featured-product">
       <img src="/assets/images/products/glass-1.png" alt="Glass Piece" />
       <div class="featured-name">Glass Piece</div>
       <div class="featured-price">$49.99</div>
     </a>
-
-    <a
-      routerLink="/catalog"
-      [queryParams]="{ filter: 'Edibles' }"
-      class="featured-product"
-    >
+    <a routerLink="/catalog" [queryParams]="{ filter: 'Edibles' }" class="featured-product">
       <img src="/assets/images/products/gummies-1.png" alt="THCA Gummies" />
       <div class="featured-name">THCA Gummies</div>
       <div class="featured-price">$19.99</div>
@@ -55,7 +36,6 @@
   <div class="why-header">
     <h2>Why Smoke HQ?</h2>
   </div>
-
   <div class="why-smoke-hq">
     <div class="benefit">
       <div class="benefit-icon">✓</div>
@@ -64,7 +44,6 @@
         Carefully selected flower, vapes, and accessories.
       </div>
     </div>
-
     <div class="benefit">
       <div class="benefit-icon">✓</div>
       <div class="benefit-title">Trusted Brands</div>
@@ -72,7 +51,6 @@
         Quality products from leading manufacturers.
       </div>
     </div>
-
     <div class="benefit">
       <div class="benefit-icon">✓</div>
       <div class="benefit-title">Friendly Staff</div>
@@ -80,7 +58,6 @@
         Knowledgeable recommendations and customer service.
       </div>
     </div>
-
     <div class="benefit">
       <div class="benefit-icon">✓</div>
       <div class="benefit-title">Local Store</div>
@@ -88,14 +65,31 @@
     </div>
   </div>
 
-  <div class="location-section">
-    <h2>Visit Smoke HQ</h2>
-
+<div class="location-section">
+  <h2>Visit Smoke HQ</h2>
+  <div class="location-content">
     <div class="location-info">
-      <p>123 Main Street</p>
-      <p>Plano, TX 75000</p>
-      <p>Mon-Sat: 10:00 AM - 9:00 PM</p>
-      <p>Sun: 12:00 PM - 6:00 PM</p>
+      <p>📍 2001 Coit Rd #168</p>
+      <p>Plano, Texas 75075</p>
+      <p class="hours-header">Hours</p>
+      <p>Mon-Sat: 10:00 AM - 11:00 PM</p>
+      <p>Sun: 11:00 AM - 9:00 PM</p>
+      <a
+        class="directions-btn"
+        href="https://maps.google.com/?q=2001+Coit+Rd+Suite+168+Plano+TX+75075"
+        target="_blank">
+        Get Directions
+      </a>
+    </div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=2001+Coit+Rd+Suite+168+Plano+TX+75075&output=embed"
+        width="100%"
+        height="550"
+        style="border:0;"
+        loading="lazy">
+      </iframe>
     </div>
   </div>
+</div>
 </div>

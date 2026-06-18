@@ -1,61 +1,99 @@
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 60px;
 }
 
 .form {
   display: flex;
-  padding: 30px 50px 50px 50px;
   flex-direction: column;
-  margin-top: 25px;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-}
-
-.form input {
-  margin-top: 25px;
+  width: 420px;
+  padding: 40px;
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .35);
 }
 
 .logo {
-  width: 150px;
+  width: 180px;
   align-self: center;
   margin-bottom: 15px;
 }
 
 .sign-in {
-  font-size: 30px;
-  align-self: center;
-  color: #555;
+  font-size: 34px;
+  font-weight: bold;
+  color: #f5a623;
+  text-align: center;
 }
 
 .sub-text {
-  font-size: 18px;
-  align-self: center;
-  margin-bottom: 15px;
-  color: #444;
+  text-align: center;
+  color: #bdbdbd;
+  margin-top: 8px;
+  margin-bottom: 25px;
 }
 
-.form .buttons {
-  margin-top: 10px;
-  display: inline-flex;
-  justify-content: flex-end;
+.form input {
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 14px 16px;
+  margin-top: 15px;
+  border-radius: 8px;
   font-size: 16px;
+  transition: border-color .2s ease;
 }
 
-input.error {
-  border: 1px solid #d25ca1;
+.form input:focus {
+  outline: none;
+  border-color: #f5a623;
+}
+
+.form input::placeholder {
+  color: #777;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.buttons button {
+  width: 100%;
+  background: #f5a623;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.buttons button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(245, 166, 35, .35);
+}
+
+.buttons button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
 }
 
 em.error {
-  padding: 2px 5px;
-  background-color: #d25ca1;
-  color: white;
+  margin-top: 6px;
+  color: #ff8080;
   font-style: normal;
+  font-size: 14px;
+  background: transparent;
+  padding: 0;
 }
 
 .signInError {
-  margin: 25px 0;
-  color: red;
-  font-size: 18px;
+  margin-top: 20px;
   text-align: center;
+  color: #ff8080;
+  font-size: 16px;
 }

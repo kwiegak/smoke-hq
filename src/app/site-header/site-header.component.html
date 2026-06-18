@@ -5,58 +5,28 @@
       <img class="logo" src="/assets/images/logo.png" alt="Smoke HQ Logo" />
     </a>
   </div>
-
-<nav class="main-nav">
-
-  <a routerLink="/catalog" [queryParams]="{ filter: 'Flower' }" routerLinkActive="active">
-    Flower
-  </a>
-
-  <a routerLink="/catalog" [queryParams]="{ filter: 'Vapes' }" routerLinkActive="active">
-    Vapes
-  </a>
-
-  <a routerLink="/catalog" [queryParams]="{ filter: 'Glass' }" routerLinkActive="active">
-    Glass
-  </a>
-
-  <a routerLink="/catalog" [queryParams]="{ filter: 'Edibles' }" routerLinkActive="active">
-    Edibles
-  </a>
-
-  <div class="cart">
-    <a routerLink="/cart" routerLinkActive="active">
-      Cart
-    </a>
+    <nav class="main-nav">
+      <a routerLink="/catalog" [queryParams]="{ filter: 'Flower' }" routerLinkActive="active">Flower</a>
+      <a routerLink="/catalog" [queryParams]="{ filter: 'Vapes' }" routerLinkActive="active">Vapes</a>
+      <a routerLink="/catalog" [queryParams]="{ filter: 'Glass' }" routerLinkActive="active">Glass</a>
+      <a routerLink="/catalog" [queryParams]="{ filter: 'Edibles' }" routerLinkActive="active">Edibles</a>
+    </nav>
   </div>
-
-</nav>
-  </div>
-
   <div class="right" *ngIf="!user">
-
-    <a routerLink="/sign-in" routerLinkActive="active">
-      Sign In
-    </a>
-
-    <a href="" class="register-link">
-      Register
-    </a>
-
+      <div class="cart">
+      <a routerLink="/cart" routerLinkActive="active">Cart</a>
   </div>
-
+    <a routerLink="/sign-in" routerLinkActive="active">Sign In</a>
+    <a href="" class="register-link">Register</a>
+  </div>
   <div class="right" *ngIf="user">
-
     <div>
       <img src="/assets/images/profile.png" (click)="toggleSignOutMenu()" alt="Profile" />
-
       <div class="sign-out" *ngIf="showSignOutMenu">
         <button (click)="signOut()">
           Sign Out
         </button>
       </div>
     </div>
-
   </div>
-
 </div>

@@ -1,128 +1,101 @@
 <div class="container">
-  <div class="hero">
-    <div class="hero-content">
+  <div class="smoke-shop-banner">
+    <div class="smoke-shop-banner-content">
       <h1>Plano's Premium Smoke Shop</h1>
       <p>THCA Flower • Vapes • Glass • Edibles</p>
-  
-      <a routerLink="/catalog" class="shop-btn">
-        Shop Now
-      </a>
+      <a routerLink="/catalog" class="shop-btn"> Shop Now </a>
     </div>
   </div>
 
-<div class="category-header">
-  <h2>Browse Our Products</h2>
-</div>
-  <ul class="products-cta">
-    <li>
-      <a routerLink="/catalog" [queryParams]="{filter: 'Glass'}" class="part">
-        <img src="/assets/images/products/glass-1.png" alt="Glass" />
-        <div class="part-name">Glass</div>
-      </a>
-    </li>
-    <li>
-      <a routerLink="/catalog" [queryParams]="{filter: 'Vapes'}" class="part">
-        <img src="/assets/images/products/vape-1.png" alt="Vapes" />
-        <div class="part-name">Vapes</div>
-      </a>
-    </li>
-    <li>
-      <a routerLink="/catalog" [queryParams]="{filter: 'Flower'}" class="part">
-        <img src="/assets/images/products/flower-1.png" alt="Flower" />
-        <div class="part-name">THCa Flower</div>
-      </a>
-    </li>
-    <li>
-      <a routerLink="/catalog" [queryParams]="{filter: 'Edibles'}" class="part">
-        <img src="/assets/images/products/gummies-1.png" alt="Edibles" />
-        <div class="part-name">Edibles</div>
-      </a>
-    </li>
-  </ul>
-<div class="featured-header">
-  <h2>Featured Products</h2>
-</div>
+  <div class="featured-header">
+    <h2>Featured Products</h2>
+  </div>
+  <div class="featured-products">
+    <a
+      routerLink="/catalog"
+      [queryParams]="{ filter: 'Flower' }"
+      class="featured-product"
+    >
+      <img src="/assets/images/products/flower-1.png" alt="THCA Flower" />
+      <div class="featured-name">Premium THCA Flower</div>
+      <div class="featured-price">$39.99</div>
+    </a>
 
-<div class="featured-products">
+    <a
+      routerLink="/catalog"
+      [queryParams]="{ filter: 'Vapes' }"
+      class="featured-product"
+    >
+      <img src="/assets/images/products/vape-1.png" alt="Disposable Vape" />
+      <div class="featured-name">Disposable Vape</div>
+      <div class="featured-price">$24.99</div>
+    </a>
 
-  <div class="featured-product">
-    <img src="/assets/images/products/flower-1.png" alt="Product" />
-    <div class="featured-name">Premium THCA Flower</div>
-    <div class="featured-price">$39.99</div>
+    <a
+      routerLink="/catalog"
+      [queryParams]="{ filter: 'Glass' }"
+      class="featured-product"
+    >
+      <img src="/assets/images/products/glass-1.png" alt="Glass Piece" />
+      <div class="featured-name">Glass Piece</div>
+      <div class="featured-price">$49.99</div>
+    </a>
+
+    <a
+      routerLink="/catalog"
+      [queryParams]="{ filter: 'Edibles' }"
+      class="featured-product"
+    >
+      <img src="/assets/images/products/gummies-1.png" alt="THCA Gummies" />
+      <div class="featured-name">THCA Gummies</div>
+      <div class="featured-price">$19.99</div>
+    </a>
   </div>
 
-  <div class="featured-product">
-    <img src="/assets/images/products/vape-1.png" alt="Product" />
-    <div class="featured-name">Disposable Vape</div>
-    <div class="featured-price">$24.99</div>
+  <div class="why-header">
+    <h2>Why Smoke HQ?</h2>
   </div>
 
-  <div class="featured-product">
-    <img src="/assets/images/products/glass-1.png" alt="Product" />
-    <div class="featured-name">Glass Piece</div>
-    <div class="featured-price">$49.99</div>
-  </div>
+  <div class="why-smoke-hq">
+    <div class="benefit">
+      <div class="benefit-icon">✓</div>
+      <div class="benefit-title">Premium Products</div>
+      <div class="benefit-text">
+        Carefully selected flower, vapes, and accessories.
+      </div>
+    </div>
 
-  <div class="featured-product">
-    <img src="/assets/images/products/gummies-1.png" alt="Product" />
-    <div class="featured-name">THCA Gummies</div>
-    <div class="featured-price">$19.99</div>
-  </div>
+    <div class="benefit">
+      <div class="benefit-icon">✓</div>
+      <div class="benefit-title">Trusted Brands</div>
+      <div class="benefit-text">
+        Quality products from leading manufacturers.
+      </div>
+    </div>
 
-</div>
+    <div class="benefit">
+      <div class="benefit-icon">✓</div>
+      <div class="benefit-title">Friendly Staff</div>
+      <div class="benefit-text">
+        Knowledgeable recommendations and customer service.
+      </div>
+    </div>
 
-<div class="why-header">
-  <h2>Why Smoke HQ?</h2>
-</div>
-
-<div class="why-smoke-hq">
-
-  <div class="benefit">
-    <div class="benefit-icon">✓</div>
-    <div class="benefit-title">Premium Products</div>
-    <div class="benefit-text">
-      Carefully selected flower, vapes, and accessories.
+    <div class="benefit">
+      <div class="benefit-icon">✓</div>
+      <div class="benefit-title">Local Store</div>
+      <div class="benefit-text">Conveniently located in Plano, Texas.</div>
     </div>
   </div>
 
-  <div class="benefit">
-    <div class="benefit-icon">✓</div>
-    <div class="benefit-title">Trusted Brands</div>
-    <div class="benefit-text">
-      Quality products from leading manufacturers.
+  <div class="location-section">
+    <h2>Visit Smoke HQ</h2>
+
+    <div class="location-info">
+      <p>123 Main Street</p>
+      <p>Plano, TX 75000</p>
+      <p>Mon-Sat: 10:00 AM - 9:00 PM</p>
+      <p>Sun: 12:00 PM - 6:00 PM</p>
     </div>
   </div>
-
-  <div class="benefit">
-    <div class="benefit-icon">✓</div>
-    <div class="benefit-title">Friendly Staff</div>
-    <div class="benefit-text">
-      Knowledgeable recommendations and customer service.
-    </div>
-  </div>
-
-  <div class="benefit">
-    <div class="benefit-icon">✓</div>
-    <div class="benefit-title">Local Store</div>
-    <div class="benefit-text">
-      Conveniently located in Plano, Texas.
-    </div>
-  </div>
-
-</div>
-
-<div class="location-section">
-
-  <h2>Visit Smoke HQ</h2>
-
-  <div class="location-info">
-    <p>123 Main Street</p>
-    <p>Plano, TX 75000</p>
-    <p>Mon-Sat: 10:00 AM - 9:00 PM</p>
-    <p>Sun: 12:00 PM - 6:00 PM</p>
-  </div>
-
-</div>
-
-
 </div>

@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./catalog.component.css'],
 })
 export class CatalogComponent {
-  products: any;
+  products: IProduct[] = [];
   filter: string = '';
 
   constructor(
